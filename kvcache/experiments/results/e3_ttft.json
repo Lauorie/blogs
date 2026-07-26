@@ -1,0 +1,58 @@
+{
+  "env": {
+    "python_version": "3.12.3",
+    "torch_version": "2.12.1+cu130",
+    "transformers_version": "5.14.1",
+    "cuda_version": "13.0",
+    "gpu_model": "NVIDIA GeForce RTX 5090",
+    "gpu_count": 1,
+    "model_path": "/root/autodl-fs/models/Qwen2.5-3B"
+  },
+  "rows": [
+    {
+      "prompt_len": 64,
+      "prefill_seconds": 0.01608641818165779,
+      "decode_step_seconds": 0.014852460473775864
+    },
+    {
+      "prompt_len": 128,
+      "prefill_seconds": 0.01570466160774231,
+      "decode_step_seconds": 0.014976609498262405
+    },
+    {
+      "prompt_len": 256,
+      "prefill_seconds": 0.015961479395627975,
+      "decode_step_seconds": 0.014934763312339783
+    },
+    {
+      "prompt_len": 512,
+      "prefill_seconds": 0.022515583783388138,
+      "decode_step_seconds": 0.014918208122253418
+    },
+    {
+      "prompt_len": 1024,
+      "prefill_seconds": 0.038641102612018585,
+      "decode_step_seconds": 0.015064578503370285
+    },
+    {
+      "prompt_len": 2048,
+      "prefill_seconds": 0.07364197820425034,
+      "decode_step_seconds": 0.014780305325984955
+    },
+    {
+      "prompt_len": 4096,
+      "prefill_seconds": 0.14893179386854172,
+      "decode_step_seconds": 0.014826659113168716
+    },
+    {
+      "prompt_len": 8192,
+      "prefill_seconds": 0.30973397195339203,
+      "decode_step_seconds": 0.014946471899747849
+    },
+    {
+      "prompt_len": 16384,
+      "prefill_seconds": 0.7230614796280861,
+      "decode_step_seconds": 0.01485636830329895
+    }
+  ]
+}

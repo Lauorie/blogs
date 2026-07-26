@@ -1,0 +1,35 @@
+{
+  "env": {
+    "python_version": "3.12.3",
+    "torch_version": "2.12.1+cu130",
+    "transformers_version": "5.14.1",
+    "cuda_version": "13.0",
+    "gpu_model": "NVIDIA GeForce RTX 5090",
+    "gpu_count": 1,
+    "model_path": "/root/autodl-fs/models/Qwen2.5-3B"
+  },
+  "runs": [
+    {
+      "dtype": "bfloat16",
+      "prompt": "In a transformer language model, the attention mechanism works as follows:",
+      "num_new_tokens": 64,
+      "tokens_identical": true,
+      "num_matching_tokens": 64,
+      "max_abs_logits_diff": 0.375,
+      "mean_abs_logits_diff_of_max": 0.22659683227539062,
+      "text_no_cache": " for each word in the input sequence, the model computes the attention weights for all other words in the sequence. These weights are then used to compute the final output for the current word. Suppose we have a sequence of 10 words, and the attention weights for the first word are given by the sequence $w_",
+      "text_with_cache": " for each word in the input sequence, the model computes the attention weights for all other words in the sequence. These weights are then used to compute the final output for the current word. Suppose we have a sequence of 10 words, and the attention weights for the first word are given by the sequence $w_"
+    },
+    {
+      "dtype": "float32",
+      "prompt": "In a transformer language model, the attention mechanism works as follows:",
+      "num_new_tokens": 64,
+      "tokens_identical": true,
+      "num_matching_tokens": 64,
+      "max_abs_logits_diff": 3.4332275390625e-05,
+      "mean_abs_logits_diff_of_max": 2.2561056539416313e-05,
+      "text_no_cache": " for each word in the input sequence, the model computes the attention weights for all other words in the sequence. These weights are then used to compute the final output for that word. Suppose we have a sequence of 10 words, and the attention weights for each word are given by the following matrix:\n\n\\[\nW",
+      "text_with_cache": " for each word in the input sequence, the model computes the attention weights for all other words in the sequence. These weights are then used to compute the final output for that word. Suppose we have a sequence of 10 words, and the attention weights for each word are given by the following matrix:\n\n\\[\nW"
+    }
+  ]
+}

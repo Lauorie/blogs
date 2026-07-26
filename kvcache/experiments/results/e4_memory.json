@@ -1,0 +1,68 @@
+{
+  "env": {
+    "python_version": "3.12.3",
+    "torch_version": "2.12.1+cu130",
+    "transformers_version": "5.14.1",
+    "cuda_version": "13.0",
+    "gpu_model": "NVIDIA GeForce RTX 5090",
+    "gpu_count": 1,
+    "model_path": "/root/autodl-fs/models/Qwen2.5-3B"
+  },
+  "config": {
+    "num_hidden_layers": 36,
+    "num_attention_heads": 16,
+    "num_key_value_heads": 2,
+    "hidden_size": 2048,
+    "head_dim": 128,
+    "vocab_size": 151936,
+    "max_position_embeddings": 32768
+  },
+  "dtype_bytes": 2,
+  "per_token_bytes_gqa": 36864,
+  "per_token_bytes_mha_hypothetical": 294912,
+  "model_weights_bytes": 6171877376,
+  "rows": [
+    {
+      "seq_len": 1024,
+      "measured_bytes": 37748736,
+      "formula_bytes": 37748736,
+      "mha_hypothetical_bytes": 301989888,
+      "relative_error": 0.0
+    },
+    {
+      "seq_len": 2048,
+      "measured_bytes": 75497472,
+      "formula_bytes": 75497472,
+      "mha_hypothetical_bytes": 603979776,
+      "relative_error": 0.0
+    },
+    {
+      "seq_len": 4096,
+      "measured_bytes": 150994944,
+      "formula_bytes": 150994944,
+      "mha_hypothetical_bytes": 1207959552,
+      "relative_error": 0.0
+    },
+    {
+      "seq_len": 8192,
+      "measured_bytes": 301989888,
+      "formula_bytes": 301989888,
+      "mha_hypothetical_bytes": 2415919104,
+      "relative_error": 0.0
+    },
+    {
+      "seq_len": 16384,
+      "measured_bytes": 603979776,
+      "formula_bytes": 603979776,
+      "mha_hypothetical_bytes": 4831838208,
+      "relative_error": 0.0
+    },
+    {
+      "seq_len": 32768,
+      "measured_bytes": 1207959552,
+      "formula_bytes": 1207959552,
+      "mha_hypothetical_bytes": 9663676416,
+      "relative_error": 0.0
+    }
+  ]
+}
