@@ -1,0 +1,14 @@
+{
+  "model": "MiniCPM3-4B",
+  "prefill_len": 1024,
+  "num_cache_tensors": 124,
+  "shapes": [
+    "(1, 40, 1024, 64)",
+    "(1, 40, 1024, 96)"
+  ],
+  "logical_bytes": 812646400,
+  "logical_per_token": 793600.0,
+  "storage_bytes": 1137704960,
+  "storage_per_token": 1111040.0,
+  "note": "storage>logical：V 是 kv_b_proj 输出（128 维/头）的非连续切片视图，钉住整块母张量"
+}

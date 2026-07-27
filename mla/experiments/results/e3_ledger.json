@@ -1,0 +1,80 @@
+[
+  {
+    "model": "NousResearch/Llama-2-7b-hf",
+    "kind": "MHA",
+    "layers": 32,
+    "heads": 32,
+    "kv_heads": 32,
+    "kv_lora_rank": null,
+    "qk_rope_head_dim": null,
+    "per_token_per_layer_bytes": 16384,
+    "per_token_bytes": 524288,
+    "bytes_at_32k": 17179869184,
+    "formula": "2x32x128x2B"
+  },
+  {
+    "model": "Qwen/Qwen2.5-3B",
+    "kind": "GQA",
+    "layers": 36,
+    "heads": 16,
+    "kv_heads": 2,
+    "kv_lora_rank": null,
+    "qk_rope_head_dim": null,
+    "per_token_per_layer_bytes": 1024,
+    "per_token_bytes": 36864,
+    "bytes_at_32k": 1207959552,
+    "formula": "2x2x128x2B"
+  },
+  {
+    "model": "Qwen/Qwen2.5-72B",
+    "kind": "GQA",
+    "layers": 80,
+    "heads": 64,
+    "kv_heads": 8,
+    "kv_lora_rank": null,
+    "qk_rope_head_dim": null,
+    "per_token_per_layer_bytes": 4096,
+    "per_token_bytes": 327680,
+    "bytes_at_32k": 10737418240,
+    "formula": "2x8x128x2B"
+  },
+  {
+    "model": "openbmb/MiniCPM3-4B",
+    "kind": "MLA",
+    "layers": 62,
+    "heads": 40,
+    "kv_heads": 40,
+    "kv_lora_rank": 256,
+    "qk_rope_head_dim": 32,
+    "per_token_per_layer_bytes": 576,
+    "per_token_bytes": 35712,
+    "bytes_at_32k": 1170210816,
+    "formula": "(256+32)x2B"
+  },
+  {
+    "model": "deepseek-ai/DeepSeek-V2",
+    "kind": "MLA",
+    "layers": 60,
+    "heads": 128,
+    "kv_heads": 128,
+    "kv_lora_rank": 512,
+    "qk_rope_head_dim": 64,
+    "per_token_per_layer_bytes": 1152,
+    "per_token_bytes": 69120,
+    "bytes_at_32k": 2264924160,
+    "formula": "(512+64)x2B"
+  },
+  {
+    "model": "deepseek-ai/DeepSeek-V3",
+    "kind": "MLA",
+    "layers": 61,
+    "heads": 128,
+    "kv_heads": 128,
+    "kv_lora_rank": 512,
+    "qk_rope_head_dim": 64,
+    "per_token_per_layer_bytes": 1152,
+    "per_token_bytes": 70272,
+    "bytes_at_32k": 2302672896,
+    "formula": "(512+64)x2B"
+  }
+]

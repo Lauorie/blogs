@@ -1,0 +1,65 @@
+{
+  "env": {
+    "gpu": "NVIDIA GeForce RTX 5090",
+    "torch": "2.12.1+cu130"
+  },
+  "dims": {
+    "D": 5120,
+    "H": 128,
+    "DH": 128,
+    "DC": 512,
+    "DR": 64
+  },
+  "rows": [
+    {
+      "ctx": 1024,
+      "mha_ms": 0.06191246211528778,
+      "decompress_ms": 0.3162883222103119,
+      "absorbed_ms": 0.11529400944709778,
+      "decompress_peak_mb": 112.0,
+      "absorbed_peak_mb": 0.875,
+      "cache_mha_mb": 64.0,
+      "cache_mla_mb": 1.125
+    },
+    {
+      "ctx": 4096,
+      "mha_ms": 0.19364804029464722,
+      "decompress_ms": 0.9314659982919693,
+      "absorbed_ms": 0.11677667498588562,
+      "decompress_peak_mb": 272.0,
+      "absorbed_peak_mb": 3.125,
+      "cache_mha_mb": 256.0,
+      "cache_mla_mb": 4.5
+    },
+    {
+      "ctx": 8192,
+      "mha_ms": 0.35844743251800537,
+      "decompress_ms": 1.7091277986764908,
+      "absorbed_ms": 0.11729635298252106,
+      "decompress_peak_mb": 528.0,
+      "absorbed_peak_mb": 6.125,
+      "cache_mha_mb": 512.0,
+      "cache_mla_mb": 9.0
+    },
+    {
+      "ctx": 16384,
+      "mha_ms": 0.6869547069072723,
+      "decompress_ms": 3.2648034393787384,
+      "absorbed_ms": 0.1173708587884903,
+      "decompress_peak_mb": 1040.0,
+      "absorbed_peak_mb": 12.125,
+      "cache_mha_mb": 1024.0,
+      "cache_mla_mb": 18.0
+    },
+    {
+      "ctx": 32768,
+      "mha_ms": 1.3430491089820862,
+      "decompress_ms": 6.43068365752697,
+      "absorbed_ms": 0.12914277613162994,
+      "decompress_peak_mb": 2072.0,
+      "absorbed_peak_mb": 24.125,
+      "cache_mha_mb": 2048.0,
+      "cache_mla_mb": 36.0
+    }
+  ]
+}

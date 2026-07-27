@@ -1,0 +1,100 @@
+{
+  "env": {
+    "gpu": "NVIDIA GeForce RTX 5090",
+    "torch": "2.12.1+cu130"
+  },
+  "models": [
+    {
+      "model": "MiniCPM3-4B",
+      "params_b": 4.073875968,
+      "transformers": "4.46.3",
+      "formula": "(256+32)x2Bx62\u5c42",
+      "formula_per_token": 35712,
+      "rows": [
+        {
+          "len": 1024,
+          "cache_bytes": 1137704960,
+          "first_pass_bytes": 1171259392,
+          "measured_per_token": 1111040.0,
+          "first_pass_per_token": 1143808.0,
+          "formula_per_token": 35712,
+          "rel_err": 30.11111111111111,
+          "decode_ms": 40.15174135565758
+        },
+        {
+          "len": 4096,
+          "cache_bytes": 4550819840,
+          "first_pass_bytes": 4550819840,
+          "measured_per_token": 1111040.0,
+          "first_pass_per_token": 1111040.0,
+          "formula_per_token": 35712,
+          "rel_err": 30.11111111111111,
+          "decode_ms": 40.62443971633911
+        },
+        {
+          "len": 8192,
+          "cache_bytes": 9101639680,
+          "first_pass_bytes": 9101639680,
+          "measured_per_token": 1111040.0,
+          "first_pass_per_token": 1111040.0,
+          "formula_per_token": 35712,
+          "rel_err": 30.11111111111111,
+          "decode_ms": 54.83521521091461
+        },
+        {
+          "len": 16384,
+          "error": "OOM: CUDA out of memory. Tried to allocate 120.00 MiB. GPU 0 has a total capacity of 31.36 GiB of which 1"
+        }
+      ]
+    },
+    {
+      "model": "Qwen2.5-3B",
+      "params_b": 3.085938688,
+      "transformers": "5.14.1",
+      "formula": "2x2x128x2Bx36\u5c42",
+      "formula_per_token": 36864,
+      "rows": [
+        {
+          "len": 1024,
+          "cache_bytes": 37748736,
+          "first_pass_bytes": 71303168,
+          "measured_per_token": 36864.0,
+          "first_pass_per_token": 69632.0,
+          "formula_per_token": 36864,
+          "rel_err": 0.0,
+          "decode_ms": 14.874208718538284
+        },
+        {
+          "len": 4096,
+          "cache_bytes": 150994944,
+          "first_pass_bytes": 150994944,
+          "measured_per_token": 36864.0,
+          "first_pass_per_token": 36864.0,
+          "formula_per_token": 36864,
+          "rel_err": 0.0,
+          "decode_ms": 14.79213684797287
+        },
+        {
+          "len": 8192,
+          "cache_bytes": 301989888,
+          "first_pass_bytes": 301989888,
+          "measured_per_token": 36864.0,
+          "first_pass_per_token": 36864.0,
+          "formula_per_token": 36864,
+          "rel_err": 0.0,
+          "decode_ms": 14.812540262937546
+        },
+        {
+          "len": 16384,
+          "cache_bytes": 603979776,
+          "first_pass_bytes": 603979776,
+          "measured_per_token": 36864.0,
+          "first_pass_per_token": 36864.0,
+          "formula_per_token": 36864,
+          "rel_err": 0.0,
+          "decode_ms": 14.830578118562698
+        }
+      ]
+    }
+  ]
+}
